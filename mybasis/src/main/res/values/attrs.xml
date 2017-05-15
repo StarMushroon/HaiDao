@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--可收缩展开的Textview
+      maxCollapsedLines 展示的行数
+      expandText="查看全部"
+      collapseText="收起全部"
+      DrawableAndTextGravity 显示的位置
+    -->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="contentTextSize" format="dimension"/>
+        <attr name="contentTextColor" format="color"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="expandText" format="string"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="collapseText" format="string"/>
+        <attr name="expandCollapseTextColor" format="color"/>
+        <attr name="DrawableAndTextGravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+
+
+ <!--Banner
+
+        app:autoPlayDuration="3000"    切换间隔
+        app:indicatorMargin="10dp"     间距
+        app:indicatorPosition="rightBottom"   位置
+        app:indicatorShape="oval"       圆形、方形
+        app:indicatorSpace="3dp"
+        app:scrollDuration="1000"
+        app:selectedIndicatorColor="#a39696"   选中的
+        app:selectedIndicatorHeight="6dp"
+        app:selectedIndicatorWidth="6dp"
+        app:unSelectedIndicatorColor="#d3f2cf"  未选中的
+        app:unSelectedIndicatorHeight="6dp"
+        app:unSelectedIndicatorWidth="6dp"
+ -->
+    <attr name="visible_tab_count" format="integer"/>
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="visible_tab_count"/>
+    </declare-styleable>
+    <declare-styleable name="BannerLayoutStyle">
+        <attr name="selectedIndicatorColor" format="color|reference" />
+        <attr name="unSelectedIndicatorColor" format="color|reference" />
+        <attr name="indicatorShape" format="enum">
+            <enum name="rect" value="0" />
+            <enum name="oval" value="1" />
+        </attr>
+
+        <attr name="selectedIndicatorHeight" format="dimension|reference" />
+        <attr name="selectedIndicatorWidth" format="dimension|reference" />
+
+        <attr name="unSelectedIndicatorHeight" format="dimension|reference" />
+        <attr name="unSelectedIndicatorWidth" format="dimension|reference" />
+
+        <attr name="indicatorPosition" format="enum">
+            <enum name="centerBottom" value="0" />
+            <enum name="rightBottom" value="1" />
+            <enum name="leftBottom" value="2" />
+            <enum name="centerTop" value="3" />
+            <enum name="rightTop" value="4" />
+            <enum name="leftTop" value="5" />
+        </attr>
+
+        <attr name="indicatorSpace" format="dimension|reference" />
+        <attr name="indicatorMargin" format="dimension|reference" />
+        <attr name="autoPlayDuration" format="integer|reference" />
+        <attr name="scrollDuration" format="integer|reference" />
+        <attr name="isAutoPlay" format="boolean"/>
+        <attr name="defaultImage" format="integer|reference"/>
+    </declare-styleable>
+</resources>
